@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "loopmod",
+	"version": "${version}",
+	"name": "loopmod",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/loopmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.loop.loopmod.Loopmod"
+		],
+		"fabric-datagen": [
+			"net.loop.loopmod.LoopmodDataGenerator"
+		]
+	},
+	"mixins": [
+		"loopmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.19.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
