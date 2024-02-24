@@ -15,8 +15,6 @@ public class Bat extends SwordItem {
 
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-        Loopmod.LOGGER.info("Hit!");
-
         Vec3d look = attacker.getRotationVec(1.0f).normalize();
 
         Vec3d knockback = new Vec3d(1, 0, 0);

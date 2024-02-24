@@ -8,7 +8,6 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class ModItemGroup {
-    public static ItemGroup CITRINE;
 
     public static void registerItemGroups() {
     }
